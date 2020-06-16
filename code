@@ -1,0 +1,13 @@
+this code gives me the 'Error: Aesthetics must be either length 1 or the same as the data (1): fill' when i use fill in geom_bar
+
+
+data<-data.frame(team='Detroit Tigers',
+                   pitchers_taken=33,
+           color='#0c2c56')
+
+
+ggplot(data=data, aes(x=team, y=pitchers_taken))+
+  geom_bar(stat = 'identity', fill = color)
+
+this code gives me the error listed above and i would like the bar chart to be filled with the 
+actual color of #0c2c56 which is supposed to be a navy blue
